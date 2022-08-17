@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <section class="container">
+        <div class="mb-3 col-1">
+            <label for="numero_tabla" class="form-label">Digite la tabla que desea</label>
+            <input type="number" class="form-control" id="numero_tabla">
+        </div>
+        <div class="mb-3 col-1">
+            <label for="limite_tabla" class="form-label">Digite hasta donde la desea</label>
+            <input type="number" class="form-control" id="limite_tabla">
+        </div>
+        <button class="btn btn-primary" onclick="generar_tabla()">Generar tabla de multiplicar</button>
+        <div id="resultado_tabla"></div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="code.js"></script>
+</body>
+
+</html>
